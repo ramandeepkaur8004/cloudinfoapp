@@ -16,3 +16,7 @@ For this project, you will need to have
   b) Any web browser (Google Chrome/Mozilla Firefox/ Internet Explorer)installed on your system. 
 Here, the main file is index.html and you can just run this file in any browser. 
 
+## NOTE:
+### Selection of GNU General Public License v3.0
+
+This is a very basic project and it is basically a template for building complex applications. So, the reason for selecting this license is straightforward. This license allows others to use it freely and can share and modify the things according to their requirements. But at the same time, this license does not allow it to use for commercial purposes. In other words, since the author is distributing it freely then the others are not allowed to sell the code. This license allows freedom in terms of access not in terms of price. 
