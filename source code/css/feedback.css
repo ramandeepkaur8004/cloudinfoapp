@@ -1,0 +1,16 @@
+.aside-2 h2, h3{
+    color: rgb(100, 7, 0);
+    font-family: "Comic Sans Ms";
+    font-style: italic;
+}
+
+.main h2{
+    color:darkorchid;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.main form{
+    color: rgb(180, 93, 122);
+    font-family: fantasy;
+    font-weight: 100;
+}

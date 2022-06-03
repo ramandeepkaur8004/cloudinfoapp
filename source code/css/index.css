@@ -1,0 +1,18 @@
+.aside-2 h3{
+    font-family: cursive;
+    color: rgba(168, 45, 45, 0.733);
+}
+
+.aside-2 ul{
+    background-color: darkseagreen;
+    font-size:20px;
+    font-family: "Lucida Sans";
+    color:rgb(141, 80, 80)
+}
+
+.main p, ul{
+    font-family: "Geneva";
+    font-size: 20px;
+    color:rgb(172, 60, 129);
+    text-justify: justify; 
+}

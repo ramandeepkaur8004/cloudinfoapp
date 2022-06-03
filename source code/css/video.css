@@ -1,0 +1,10 @@
+.video-container iframe {
+    border: 5px solid black;
+    height: 380px;
+    width: 550px;
+    text-align: center;
+    }
+.video-container p{
+    font-size: 15px;
+    text-justify: justify; 
+}

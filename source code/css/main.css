@@ -1,0 +1,124 @@
+header{
+  text-align: center;
+}
+header img{
+      height: 200px;
+      width:100%
+}
+
+body{
+    width: 1120px;
+    background-color: #5bb974;
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid black;
+}
+.wrapper {
+    display:inline-flex;
+    flex-flow: nowrap;
+    font-weight: bold;
+    text-align: justify;
+    justify-content: space-around;
+  }
+  
+.wrapper > * {
+    padding: 10px;
+    flex: 1 100%;
+  }
+
+.aside-1 ul{
+    color:rgb(177, 39, 190);
+    list-style:none;
+    font-weight: bold;
+  }
+
+.aside-1 ul img{
+    width: 80px;
+    height: 50px;
+    border: 2px rgb(17, 18, 19);
+    padding: 10px;
+    margin: 10px;
+    align-items: center;
+  }
+
+nav{
+    color: rgba(229, 241, 235, 0.5);
+    text-align: center;
+    background-color:rgb(20, 3, 3);
+    padding: 20px, 0;
+}
+nav a{
+    font-size: 20px;
+    font-weight: bold;
+    color:rgb(210, 227, 231);
+    padding: 0 50px;
+    text-decoration: none;
+}
+nav>ul>li{ /* Only applies these styles to the immediate child <li> in the immediate child <ul> in <nav>. Basically it only affects the <li> in the main menu not the sub menu */
+    display: inline-block; /* to make the links in the main menu site side by side */
+    position: relative; /* to make the parent <li> as the container element of the absolutely positioned <ul> representing the sub menu */
+}
+
+nav ul li ul { /* applies styles only to the sub menu */
+	width: 200px;
+	position: absolute; /* put the sub menu in a separate layer */
+	z-index: 999; /* make sure the sub menu is not hidden behind other elements */
+	text-align: left;
+	background-color: #890417;
+    box-shadow: 0 0 5px #800d29;
+}
+
+nav ul li ul li a{ /* styles for the <a> in the sub menu */
+    color: white;
+    padding: 10px;
+    display: block; /* to make sure the anchor tags occupy all the space available otherwise the hover colour changes do not have a good user experience. */
+}
+
+nav ul li ul li:hover a:hover{ /* styles for the <a> in the sub menu on mouse over */
+    color: #890417;
+    background-color: #f7e7d9;
+}
+
+nav ul li ul { /* applies styles only to the sub menu */
+    display: none; /* hide the sub menu by default */
+}
+
+nav ul li:hover ul{/* applies styles only to the sub menu whose parent <li> is hovered */
+    display: block; /* show the sub menu when a user brings their mouse over the parent <li> */
+}
+
+footer{
+    clear: both; /* clear the floating elements above */
+    text-align: center; /* Center the text in the footer */
+    font-weight: bold; /* make the text bold */
+    background-color: #b4209c; /* add colour to the  background */
+    padding: 0 0 20px 0; /* add a 20 px top and bottom padding in the footer tag  */
+    font-size: 20px; /* make the text bigger than default */
+    color: #d7df6a; /* change the colour of the text */
+}
+
+@media all and (min-width: 600px) {
+    .aside {
+      flex: 1 auto;
+    }
+  }
+  @media all and (min-width: 800px) {
+    .main {
+      flex: 2 800px;
+    }
+    .aside-1 {
+      order: 1;
+    }
+  
+    .main {
+      order: 2;
+    }
+  
+    .aside-2 {
+      order: 3;
+    } 
+  }
+  body {
+    padding: 2em;
+  }
+
